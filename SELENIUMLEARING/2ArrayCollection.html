@@ -1,0 +1,418 @@
+
+CLASS, PRINT STATEMENT, VARIABLE, METHOD, OBJECT- REF VARIABLE, REF MEHTOD, STATIC NON STATIC
+
+JAVA LIBRARY------------------------------------------<br></P><p><p></p>
+java Library- pre Written code for Java
+<Br>
+CLASS------------------------------------------<br></P><p><p></p>
+package FirstProgram;
+public class Test {
+public static void main (String [] args) {
+System.out print("Good");
+System. out.print ("Morning");
+}
+}
+<Br>
+
+PRINT STATEMENT---------SYSO+ENTER---------------------------------<br></P><p><p></p>
+>> new line character- +\n mean move to next line 
+System. out.print ("Good" + "\n");
+<Br>
+//  Println add new line
+System.out println("Good");
+<Br>
+// b/w 2 numbers + sign acts as arithmetic operator
+System. out.println(10 + 2); //12
+<Br>
+System.out.println(10/2); // 5
+<Br>
+// b/w 2 Strings + acts as concatenating operator, it joins both the strings
+System. out.println("Good" + "Night"); //GoodNight
+<Br>
+// b/w 2 Strings + acts as concatenating operator, it joins both the strings
+System. out.println("Good" + 9);// Good9
+System. out.println("19" + "20"); //1920
+<Br>
+// String and number
+System. out.println ("My age is " + 50);// My age is 50
+
+// Every character has some ASCII value associated with it like A = 65 and a = 97
+System. out.println('A' + 10); //75
+System. out.println('a' + 10); //107
+
+// 2 inputs at a time, movement is from left -- > Right
+System. out.println ("My age is " + 20 + 10); // My age is 20 + 10 -- > My age is 2010
+<Br>
+    
+METHOD & VARIABLE------------------------------------------<br></P><p><p></p>
+>>>>>>> main method call all other method and run you have to call method inside to the static method to run 
+With the help of the method class does something like walk, run play
+With the help of variable class know something, like, clor, name, height eg
+
+
+Public class oreo{
+//variables -- > with the help of Variables class knows Something
+//Variables are -- > states or properties
+String colour = "Golden";
+String name = "Oreo";
+double age = 1.5;
+
+// with the help of methods we showcase - actions / behaviors
+//with the help of methods class Does something
+public void bark () {
+
+public void walk () {
+
+}
+
+public void play () {
+
+public void run () {
+
+}
+
+}
+8 DATA TYPE ------------INTEGERS------------------------------------------<br></P><p><p></p>
+Total 8 data type is there= (boolean+char+double+float+long+short+byte+int)
+Integers= + and - (-124 & 124)= byte, short, int, long 
+byte-8 bits(1byte)= approx 256 character
+short- 16 Bits(2bytes)
+Int- 32 Bits (4bytes)
+Long (64 Bits  (8bytes))
+<Br>
+
+8 DATA TYPE ------------DECIMAL/FLOAT------------------------------------------<br></P><p><p></p>
+float=32bits
+double= 64bits
+<Br>
+
+8 DATA TYPE ------------CHARACTER/A,B etc------------------------------------------<br></P><p><p></p>
+char= 2byte
+<Br>
+
+8 DATA TYPE ------------BOOLEAN------------------------------------------<br></P><p><p></p>
+true= 1 byte
+false= 1 byte
+<Br>
+
+2 DATA TYPE ------------PRIMITIVE & DERIVED------------------------------------------<br></P><p><p></p>
+PRIMITIVE= 8 data type we study above= (boolean+char+double+float+long+short+byte+int)
+DERIVED/REFERENCE= class/string
+collection of character is string
+
+<Br>
+
+PHASES/JOURNEY OF VARIABLE------------( values are store in the variables) Decalred, Intialised and utilised-----------------------------------------<br></P><p><p></p>
+Declared- in premisess of method/local variable, when outside method but inside class is global
+eg: Int i ; (meeory get created and alloted to I, I is pointing to the memory assied to int variable)
+Intialised- i=10 ; ( now here i is assigned a value)
+Utilization: system.out. print (i) here variable vanish and value get exposed
+<Br>
+
+VARIABLE------------Based on location-----------------------------------------<br></P><p><p></p>
+--global/permanent- lLocal/ temporaray 
+for temporary use we like local variable, for permanent use we use global variable
+if any variable decalre in the premises of METHOD- local varibale(INSIDE A METHOD)- inside class
+Global variable- outside method inside class
+local- inside the method
+<Br>
+
+VARIABLE------------Based on value-----------------------------------------<br></P><p><p></p>
+PRIMITIVE= 8 data type we study above= (boolean+char+double+float+long+short+byte+int)
+DERIVED/REFERENCE= class/string
+collection of character is string
+Static- important and available in .class file/ not get loaded to the object
+non-staitc- when word static not attached, which mean important, and also not in .class file, they need to be uploaded into object to use
+object- is replica of class, used to upload non-static member to use, can have n numberof copies
+<BR>
+we always create object of the clas only
+objectcreation in memory>>>>>> <BR>
+class name refvariable = new classname ();
+new keyword will be assign to the varibale, and reference varibale will point to this memeory, reference varible will be called to used
+syso (refvarible.name)
+name is the variaable that is stored refvariable 
+
+
+package FirstProgram;
+
+public class Variables
+
+// Global Variable - static variable
+static int y = 500;
+//>>>>>>>>>>>>>>>>> Obeject/as non static>>>>>>>>>>>
+String name = "Hakoonamatata";
+
+public static void main (String[] args) {
+
+// local variable // temporary variables
+int i; // Declaration
+i = 20; // Initialization
+System.out.println (i); // Utilization
+
+// Declaration and Initialization in one line
+int x = 300;
+System. out.println (x) ;
+
+// Declaration is done without Initialization
+int z;
+// System.out.println(z);
+
+System. out.println (y);
+
+//>>>>>>>>>>>>>>>>> Obeject>>>>>>>>>>> remember name bring content of the ref variable, ref varibale is content(ref.name)to pull content- ref variable is scoop to pull the value of variable,
+//its like icecream in a box, iccream= casata refvarible.iccream will scope of casata that is icecream value
+// Create an object of the class
+Variables ref = new Variables();
+
+System. out.println ("name value is")
+
+// method calls
+// ml();
+// m2();
+// m3();
+
+
+
+
+<Br>
+
+LOCAL VARIABLE(secalre inside the method)--------------local variable have no default value, it need to be intialized/ and cannot be called in another method------------------------------------<br></P><p><p></p>
+package FirstProgram; <Br>
+
+public class Variables {
+
+public static void main (String[] args) {
+
+//local variable // temporary variables
+int i; // Declaration
+i = 20; // Initialization
+System. out.println (i); //Utilization
+
+//Declaration and Initialization in one line
+int x = 300;
+System. out.println (x);
+
+//Declaratioh is done without Initialization
+int z;
+//System.out.println (z);
+
+}
+
+}
+
+public static void ml () {
+//scope (accessibility) of x variable is not here in ml method
+//System.out.println (x) ;
+
+public static void m2 () {
+//scope (accessibility) of x variable is not here in ml method
+//System.out.println (x) ;
+
+public static void m3 () {
+//scope (accessibility) of x variable is not here in ml method
+//System.out.println (x) ;
+}
+}
+}
+
+<Br>
+GLOBAL VARIABLE( accessible at multiple location/static member of the class/outside the method inside the class)-----------------------------------------------------<br></P><p><p></p>
+
+
+package FirstProgram;
+
+public class Variables {
+//>>>>>>>>>>>>>>>>> global Varibale>>>>>>>>>>>
+// Global Variable - static variable
+static int y = 500;
+
+String name = "Hakoonamatata";
+
+public static void main (String [] args)
+
+// local variable // temporary variables
+int i; // Declaration
+i = 20; // Initialization
+System. out.println (i); // Utilization
+
+// Declaration and Initialization in one line
+int x = 300;
+System. out.println (x) ;
+
+// Declaration is done without Initialization
+int z;
+// System.out.println(z);
+
+System. out.println (y);
+//>>>>>>>>>>>>>>>>> all methods got called in the main method, only execution start/happen from main method>>>>>>>>>>>
+m1();
+m2();
+m3();
+
+}
+//>>>>>>>>>>>>>>>>> global Varibale Y is called in all these varibale>>>>>>>>>>>
+public static void ml ()
+// scope (accessibility) of x variable is not here in ml method
+// System.out.println (x);
+
+System. out.println ("Running in ml () and value of y is "+y) ;
+
+}
+
+public static void m2 () {
+// scope (accessibility) of x variable is not here in ml method
+// System.out.println (x);
+System. out.println ("Running in m2 () and value of y is "+y) ;
+
+}
+
+public static void m3 () {
+// scope (accessibility) of x variable is not here in ml method
+// System.out.println(x);
+System. out.println ("Running in m3() and value of y is "+y) ;
+
+}
+
+
+
+METHOD CALLING----------------always inside main method--------------------------<br></P><p><p></p>
+//>>>>>>>>>>>>>>>>>  main method call all other method and run you have to call method inside to the static method to run 
+>>>>>>>>>>>
+package FirstProgram;
+
+public class Variables {
+
+// Global Variable - static variable
+static int y = 500;
+
+String name = "Hakoonamatata";
+
+public static void main (String [] args)
+
+// local variable // temporary variables
+int i; // Declaration
+i = 20; // Initialization
+System. out.println (i); // Utilization
+
+// Declaration and Initialization in one line
+int x = 300;
+System. out.println (x) ;
+
+// Declaration is done without Initialization
+int z;
+// System.out.println(z);
+
+System. out.println (y);
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>// method calls
+m1();
+m2();
+m3();
+
+}
+    public static void ml () {
+// scope (accessibility) of x variable is not here in ml method
+// System.out.println (x);
+
+System. out.println (y) ;
+
+}
+
+public static void m2 () {
+// scope (accessibility) of x variable is not here in ml method
+// System.out.println (x);
+System. out.println (y) ;
+
+}
+
+public static void m3() {
+// scope (accessibility) of x variable is not here in ml method
+// System.out.println (x); ]
+System. out.println (y);
+
+};
+
+STATIC & NON_STATIC----------------always need to create object for non static, when static get loaded into .class file--------------------------<br></P><p><p></p>
+>>>>>>>>>>>>>>>>>>>>>>>>>STATIC MEAN IMPORTANT & CALLED GLOBALLY
+Static get loaded- to .class File
+Non- static- get loaded to object
+no static get loaded to obeject and create virtual copy of the class or replica copy of class, 
+it does not get loaded to the .class file, thats why need to create object, we can creat n number of 
+virtual copy of the class and play around with object, but it will not make change to original file, 
+>> Static does not get loaded to object, it get loaded to .class file
+
+
+METHOD CALLING----------------always inside main method--------------------------<br></P><p><p></p>
+public static void m2 () {
+    // this is called method declation or signature, method head
+System.out.println("Running in m2()");
+// this is method intiallization, method body, method implimentation
+
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>to call m(); is used to execute
+>>>>>>>>>>>>>>>>>>>>>>>>>ref.m(); if its not static method
+
+>>>>>>If static
+
+package FirstProgram;
+
+public class Methods {
+
+public static void main (String [] args) {
+
+//method call
+m1();
+
+public static void ml () {
+m2();
+System.out.println("Running in ml ()");
+
+public static void m2 () {
+System. out.printl ("Running in m2 () ");
+
+public static void m3 () {
+System. out.println("Running in m3() ");
+
+public static void m4() {
+System. out.println("Running in m4() ");
+
+public static void m5 () {
+System. out.println("Running in m5() ");
+
+}
+
+>>>>>>If not static
+package FirstProgram;
+
+public class Methods {
+
+static Methods ref = new Methods () ;
+
+public static void main (String[] args) {
+
+// method call
+ref.ml();
+
+public void m1 () {
+m2();
+System. out.println("Running in m1 () ");
+
+public void m2 () {
+m3 ();
+System.out.println("Running in m2()");
+
+public void m3 () {
+m4();
+System. out.println("Running in m3()");
+
+public void m4 () {
+m5();
+System. out.println("Running in m4()");
+
+public void m5 () {
+System.out.println("Running in m5()");
+
+
+TO COMMENT----------------THREE Method--------------------------<br></P><p><p></p>
+//
+/**           */
