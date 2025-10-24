@@ -1,0 +1,153 @@
+CLASS, consist of methods and vairable, variable tell something/describe
+and method does the action
+
+package FirstProgram;
+
+public class ReturnTypeOfAMethod {
+
+public static void main (String[] args) {
+
+
+}
+
+METHOD PARTS------------------------------------------<br></P><p><p></p>
+access sepcifier-public
+modifier-static
+retrun type of method- void
+method Name- m1
+
+eg: 
+    pulbilc static void m1() {
+}
+
+Here m1 is method name
+
+VARIABLE/NON STATIC VARIABLE CREATION/ OBJECT OF THE CLASS/REFERENCE VARIABLE------------------------------------------<br></P><p><p></p>
+Local- inside the class
+Global- outside the class static non-static 
+( primitive and non static is refernce variable need object to be created)
+
+Non _static/ referenceb variable
+
+Outside class we will  write -global varible non- static
+String name=  "Hakoonamatata"
+
+Inside class we will write- create object of the class, 
+Variables ref = new Variables();
+System. out.println (ref.name)
+
+when the method will be run this code for variable will print the variable "Hakoonamatata"
+
+RETURN TYPE OF METHOD (MEHTOD/ BEHAVIOR/ACTION OF THE CLASS)------------------------------------------<br></P><p><p></p>
+
+signature, declaration, body, logic, block, implimentation of method 
+---------------
+>>
+RETURN TYPE OF METHOD
+
+IN METHOD
+public static String m2(){
+    return "Divya";
+}
+
+IN THE METHOD IT WILL BE CALLED LIKE THIS
+String Str = m2();
+System.out.print.ln(str)
+---------------
+>>
+METHOD RETURING OBJECT
+GLOBAL VARIABLE- NON STATIC  
+int xyz = 300// non static global variable
+
+
+IN METHOD
+Public static nameOfTheClass m3(){
+nameOfTheClass ref = nameOfTheClass();
+// int number = ref.xyz;
+// System.out.print.ln(number)
+refturn ref;
+
+}
+
+IN THE METHOD IT WILL BE CALLED LIKE THIS
+nameOfTheClass obj = m2();
+System.out.print.ln(obj.xyz)
+
+or m();
+
+
+CLASS EXAMPLE FOR RETURN TYPE------------------------------------------<br></P><p><p></p>
+
+
+package FirstProgram;
+
+public class ReturnTypeOfAMethod {
+
+int xyz = 300; // non-static global variable
+
+public static void main (String[] args) {
+
+int var = m1 ();
+System. out.println (var) ;
+
+String str = m2();
+System. out.println (str) ;
+
+}
+
+// AccessSpecifier modifier returnTypeofAMethod MethodName ()
+public static char ml () {
+
+return '$' ;
+}
+public static String m2 () {
+
+return "Divya";
+
+}
+
+}
+
+
+POINTS TO REMEMBER------------------------------------------<br></P><p><p></p>
+/ **
+* Return type of a method
+
+* 1. Every method will have "return" statement to the end of every method.
+
+2. between return and semicolon, if no data is available then it is known as
+default return statement.
+
+* 3. For default return statement "void" is a return type keyword
+
+4. If user is not defining a return statement in a method, compiler will auto
+generate a return statement and it will be located in the .class file.
+
+5. If there is a data in between return keyword and a semicolon then based on
+the type of value, return type of a method will change
+
+public static int ml () { // 1 step- here instead of void we used int of return of method
+
+* /
+
+POINTS TO REMEMBER------------------------------------------<br></P><p><p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
